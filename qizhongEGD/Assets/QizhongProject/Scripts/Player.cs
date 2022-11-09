@@ -35,5 +35,12 @@ namespace tristan
             //generating destruction visual effect and destroying the 'Player' object
             Destroy(gameObject);
         }
+
+        public GameObject panel;
+
+        private void OnDestroy()
+        {
+            panel.SetActive(true);
+        }
     }
 }
